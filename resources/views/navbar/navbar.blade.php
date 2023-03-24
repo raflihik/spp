@@ -47,17 +47,20 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Halaman Utama</a>
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Daftar Petugas</a>
+                <a class="nav-link active" href="#">Petugas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#">Siswa</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Spp</a>
+              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Siswa
+                  Pembayaran
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Daftar Siswa</a></li>
@@ -65,10 +68,11 @@
                 </ul>
               </li>
             </ul>
-            <form class="d-flex">
+            {{-- <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-dark" type="submit">Search</button>
-            </form>
+              <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form> --}}
+            <a href="/logout" class="btn btn-outline-warning">Logout</a>
           </div>
         </div>
       </nav>
