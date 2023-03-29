@@ -57,8 +57,8 @@
                                             <i class="fab fa-google fa-fw"></i> Login with Google
                                         </a>
                                     </form>
-                                    <div class="text-center">
-                                        <a class="small" href="forgot-password.html">wkwkwkkw</a>
+                                    <div class="text-center mt-3">
+                                        <a class="big" href="forgot-password.html">anda sebagai siswa</a>
                                     </div>
                                 </div>
                             </div>

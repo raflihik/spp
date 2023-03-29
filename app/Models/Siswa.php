@@ -8,22 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Siswa extends Model
 {
     use HasFactory;
-    protected $table = 'siswa';
-   
-    protected $guarded= [
-        'id'
-    ];
 
-    public function spp()
+    protected $table = 'siswa';
+
+    protected $primaryKey = 'nisn';
+
+    protected $guarded = [];
+
+
+    public function kelas()
     {
-         return $this->belongsTo(Spp::class,'id_spp','id');
+        return $this->belongsTo(Kelas::class, 'id_kelas');
     }
-   
-   public function pembayaran(){
-        return  $this->hasMany(Pembayaran::class,'id_spp');
-   }
-   
-    public function kelas(){
-        return  $this->belongsTo(Kelas::class,'id_kelas');
-   }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSiswaTable extends Migration
+class CreateSiswasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,14 +14,21 @@ class CreateSiswaTable extends Migration
     public function up()
     {
         Schema::create('siswa', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->char('nisn', 12);
+            $table->char('nisn', 10)->primary();
             $table->char('nis', 8);
             $table->string('nama', 35);
-            $table->foreignId('id_kelas');
+            $table->string('password');
+
+            $table->unsignedBiginteger('id_kelas');
+            $table->foreign('id_kelas')->references('id_kelas')->on('kelas')->onDelete('cascade')->onUpdate('cascade');
+
             $table->text('alamat');
-            $table->string('nomor_telp');
-            $table->foreignid('id_spp');
+            $table->string('no_telp', 13);
+
+            $table->unsignedBiginteger('id_spp');
+            $table->foreign('id_spp')->references('id_spp')->on('spp')->onDelete('cascade')->onUpdate('cascade');
+
+
             $table->timestamps();
         });
     }

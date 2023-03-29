@@ -38,7 +38,7 @@
           </div>
         </div>
       </div>
-    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: rgb(0, 119, 255)">
+    <nav class="navbar navbar-expand-lg navbar-dark mb-3" style="background-color: rgb(0, 119, 255)">
         <div class="container">
           <a class="navbar-brand" href="#">SPP</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,6 +76,10 @@
           </div>
         </div>
       </nav>
+      <div class="container">
+        @yield('content')
+
+      </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
